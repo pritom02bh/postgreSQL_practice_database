@@ -1,7 +1,7 @@
 # postgreSQL_practice
 My Practice  code and query for PostgreSQL
 
-### CREATE TABLES
+### CREATE customer TABLES
 
     CREATE TABLE customer(
     first_name VARCHAR(30) NOT NULL,
