@@ -44,4 +44,12 @@ My Practice  code and query for PostgreSQL
     ('Christopher', 'Robinson', 'christopherrobinson@ibm.com', 'IBM', '754 Cedar St', 'Pharr', 'TX', '78577', '488-694-7677', '1932-06-25', 'F', '2016-08-19 16:11:31');
 
 
-### data
+### CREATE CUSTOM DATA TYPE
+
+    CREATE TYPE sex_type as enum
+    ('M','F');
+
+### Now Assign The Datatype to The Customer Table
+
+    ALTER TABLE customer
+    ALTER COLUMN sex TYPE sex_type USING sex::sex_type;
