@@ -11,7 +11,7 @@ My Practice  code and query for PostgreSQL
     street VARCHAR(50) NOT NULL,
     city VARCHAR(40) NOT NULL,
     state CHAR(2) NOT NULL,
-    zip SMALLINT NOT NULL,
+    zip CHAR(5) NOT NULL,
     phone VARCHAR (20) NOT NULL,
     birth_date DATE  NOT NULL,
     sex CHAR(1) NOT NULL,
